@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Join a Game</title>
+        <title>Blades in the Dark: Join a Game</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
+            <h2>Blades in the Dark </h2>
             <a href="AboutGame.html">About the Game</a>
             <a href="CrewSheets.html">Crew Sheets</a>
             <a href="JoinGameForm.html">Join the Game</a>
@@ -12,7 +14,7 @@
         </header>
 
         <div class="main">
-            <h1>Interested in Playing?</h1>
+            <h1>Interested in Playing Blades in the Dark?</h1>
             <p>Fill out the form below to let me know that you are interested in playing <strong>Blades in the Dark</strong>.</p>
 
             <fieldset>
@@ -20,18 +22,23 @@
                 <form action="/form-handling-url" method="post">
                     
                     <div class="form-example">
-                        <label for="name">Name</label>
+                        <label for="name">Name:</label>
                         <input type="text" name="name" id="name">
                     </div>
 
                     <div class="form-example">
-                        <label for="email">Email</label>
+                        <label for="email">Email:</label>
                         <input type="email" name="email" id="email">
                     </div>
 
                     <div class="form-example">
                         <label for="gm">I am willing to GM</label>
-                        <input type="checkbox" name="gm" id="gm">
+                        <input class="checkbox" type="checkbox" name="gm" id="gm">
+                    </div>
+
+                    <div class="form-example">
+                        <label for="reason">Why are you interested in playing?</label>
+                        <textarea id="reason"></textarea>
                     </div>
 
                     <input type="submit" value="Submit">
