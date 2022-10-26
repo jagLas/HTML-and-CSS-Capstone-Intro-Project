@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Join a Game</title>
+    </head>
+    <body>
+        <header>
+            <a href="AboutGame.html">About the Game</a>
+            <a href="CrewSheets.html">Crew Sheets</a>
+            <a href="JoinGameForm.html">Join the Game</a>
+            <a href="OtherRPGs.html">Other RPGs</a>
+        </header>
+
+        <div class="main">
+            <h1>Interested in Playing?</h1>
+            <p>Fill out the form below to let me know that you are interested in playing <strong>Blades in the Dark</strong>.</p>
+
+            <fieldset>
+                <legend>Interest Form</legend>
+                <form action="/form-handling-url" method="post">
+                    
+                    <div class="form-example">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div class="form-example">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="form-example">
+                        <label for="gm">I am willing to GM</label>
+                        <input type="checkbox" name="gm" id="gm">
+                    </div>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+            </fieldset>
+        </div>
+    </body>
+</html>
